@@ -32,7 +32,6 @@ class flashcards:
 
                     print('turn = flip to answer side, exit = exits the program')
                     print('')
-                    print(answer)
                     print('Sisesta vastus: ')
                     user_answer = input()
                 else:
