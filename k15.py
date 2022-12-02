@@ -32,6 +32,7 @@ class flashcards:
 
                     print('turn = flip to answer side, exit = exits the program')
                     print('')
+                    print(answer)
                     print('Sisesta vastus: ')
                     user_answer = input()
                 else:
@@ -46,7 +47,7 @@ class flashcards:
                     print('Sisesta vastus: ')
                     user_answer = input()
              
-                if(user_answer == answer):
+                if(user_answer.lower() == answer.lower() or user_answer.upper() == answer.upper() or user_answer == answer):
                     print("  ")
                     print("Correct answer")
                     print("  ")
