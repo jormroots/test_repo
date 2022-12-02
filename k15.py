@@ -47,6 +47,7 @@ class flashcards:
                     user_answer = input()
              
                 if(user_answer == answer):
+                    print("  ")
                     print("Correct answer")
                     print("  ")
                     flag = False
@@ -60,6 +61,7 @@ class flashcards:
                 elif(user_answer == 'turn' and flag == True):
                     flag = False
                 else:
+                    print("  ")
                     print("Wrong answer")
                     print("  ")
         else:
