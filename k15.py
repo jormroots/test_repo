@@ -22,6 +22,8 @@ class flashcards:
             question, answer = random.choice(list(self.cards.items()))
             while(user_answer != 'exit' and flag == False or flag == True):
                 if(user_answer != 'exit' and flag == False):
+                    last_question = question
+                    last_answer = answer
                     print("  ")
                     row = len(question)
                     h = ''.join(['+'] + ['-' *row] + ['+'])
@@ -44,11 +46,13 @@ class flashcards:
                     print('Sisesta vastus: ')
                     user_answer = input()
              
-                if(user_answer.lower() == answer):
+                if(user_answer == answer):
                     print("Correct answer")
                     print("  ")
                     flag = False
                     question, answer = random.choice(list(self.cards.items()))
+                    if(last_question == question and last_answer == answer):
+                        question, answer = random.choice(list(self.cards.items()))
                 elif(user_answer == 'exit'):
                     return 0
                 elif(user_answer == 'turn' and flag == False):
