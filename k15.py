@@ -26,7 +26,7 @@ class flashcards:
                     last_answer = answer
                     print("  ")
                     row = len(question)
-                    h = ''.join(['+'] + ['-' *row] + ['+'])
+                    h = ''.join(['-'] + ['-' *row] + ['-'])
                     result = h + '\n'"|"+question+"|"'\n' + h
                     print(result)
 
@@ -37,7 +37,7 @@ class flashcards:
                 else:
                     print("  ")
                     row = len(answer)
-                    h = ''.join(['+'] + ['-' *row] + ['+'])
+                    h = ''.join(['-'] + ['-' *row] + ['-'])
                     result = h + '\n'"|"+answer+"|"'\n' + h
                     print(result)
 
