@@ -1,0 +1,17 @@
+Projekti nõuded
+
+Funktsionaalsed nõuded:
+Programmi käivitamisel prindib terminali suvalise küsimuse
+Vastust saab sisestada käsureale ja vajutades “Enter”
+Vale vastuse puhul anna kasutajale info “Vale vastus”
+Kasutaja peab saama flash kaardi ümber pöörata
+Kasutajal on võimalus ise programm peatada
+
+Mitte-funktsionaalsed nõuded:
+Programm võtab suvalise küsimuse etteantud küsimuste- või käskude listist
+Flash kaart võiks välja näha selline:
+-----------
+|küsimus|
+-----------
+Ümber keeramiseks tuleb sisestada käsureale käsk “turn”
+Lõpetamiseks tuleb sisestada käsureale käsk “exit”
