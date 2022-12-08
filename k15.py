@@ -16,6 +16,7 @@ class flashcards:
         'MItu õpilast valiti(number)?':'20'}
     
     def quiz(self):
+        # flag = False on front view ehk jätab meelde, et ta ainult näitaks küsimuste poolt
         flag = False
         user_answer = ''
         if(flag == False or flag == True):
@@ -57,6 +58,7 @@ class flashcards:
                 elif(user_answer == 'exit'):
                     return 0
                 elif(user_answer == 'turn' and flag == False):
+                    # flag = True on back view ehk jätab meelde, et ta ainult näitaks vastuste poolt
                     flag = True
                 elif(user_answer == 'turn' and flag == True):
                     flag = False
